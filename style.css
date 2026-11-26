@@ -1,1 +1,25 @@
 
+const theme = document.getElementById("theme");
+
+// Change website accent colour
+theme.addEventListener("change", function () {
+  document.documentElement.style.setProperty(
+    "--accent",
+    theme.value
+  );
+});
+
+// Save selected colour
+const savedTheme = localStorage.getItem("nyxg7-theme");
+
+if (savedTheme) {
+  theme.value = savedTheme;
+  document.documentElement.style.setProperty(
+    "--accent",
+    savedTheme
+  );
+}
+
+theme.addEventListener("change", function () {
+  localStorage.setItem("nyxg7-theme", theme.value);
+});
