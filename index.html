@@ -1,91 +1,361 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NYXG7</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NYXG7 — Community &amp; project hub</title>
+    <meta
+      name="description"
+      content="NYXG7 is a community and project hub. Follow the roadmap from foundation to launch, find every channel we're on, and get involved."
+    />
+    <meta name="theme-color" content="#0b0b0c" />
 
-<header>
-  <div class="logo">NYXG7</div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#socials">Socials</a>
-    <a href="#roadmaps">Roadmaps</a>
-    <a href="#faq">FAQ</a>
-    <a href="#settings">Settings</a>
-  </nav>
-</header>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NYXG7" />
+    <meta property="og:title" content="NYXG7 — Community &amp; project hub" />
+    <meta
+      property="og:description"
+      content="A community and project hub. Three phases: foundation, launch, growth."
+    />
+    <meta property="og:url" content="https://nyxg71.github.io/nyxg7/" />
+    <meta property="og:image" content="https://nyxg71.github.io/nyxg7/assets/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NYXG7 — Community &amp; project hub" />
+    <meta
+      name="twitter:description"
+      content="A community and project hub. Three phases: foundation, launch, growth."
+    />
+    <meta name="twitter:image" content="https://nyxg71.github.io/nyxg7/assets/og.png" />
 
-<section id="home" class="hero">
-  <p class="tag">WELCOME TO</p>
-  <h1>NYXG7</h1>
-  <p>Your community. Your future. Your space.</p>
-  <a href="#roadmaps" class="btn">Explore More</a>
-</section>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/favicon.svg" />
 
-<section id="socials">
-  <h2>Our Socials</h2>
-  <div class="cards">
-    <a href="#" class="card">Discord ↗</a>
-    <a href="#" class="card">TikTok ↗</a>
-    <a href="#" class="card">YouTube ↗</a>
-    <a href="#" class="card">Instagram ↗</a>
-  </div>
-</section>
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="stylesheet" href="./style.css" />
 
-<section id="roadmaps">
-  <h2>Roadmaps</h2>
-  <div class="card">
-    <h3>Phase 1 — Foundation</h3>
-    <p>Build the NYXG7 community and website.</p>
-  </div>
-  <div class="card">
-    <h3>Phase 2 — Launch</h3>
-    <p>Launch projects and introduce new features.</p>
-  </div>
-  <div class="card">
-    <h3>Phase 3 — Growth</h3>
-    <p>Expand the community and improve the experience.</p>
-  </div>
-</section>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "NYXG7",
+        "url": "https://nyxg71.github.io/nyxg7/",
+        "description": "NYXG7 is a community and project hub."
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<section id="faq">
-  <h2>FAQ</h2>
-  <details>
-    <summary>What is NYXG7?</summary>
-    <p>NYXG7 is a community and project hub.</p>
-  </details>
-  <details>
-    <summary>Where can I find your socials?</summary>
-    <p>Visit the Socials section above.</p>
-  </details>
-  <details>
-    <summary>What is the roadmap?</summary>
-    <p>Check the Roadmaps section for future plans.</p>
-  </details>
-</section>
+    <header class="site-header" data-header>
+      <div class="site-header__inner">
+        <a class="brand" href="#top" aria-label="NYXG7 home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M5 19V5l14 14V5" stroke-linecap="square" />
+            </svg>
+          </span>
+          <span class="brand__word">NYXG7</span>
+        </a>
 
-<section id="settings">
-  <h2>Settings</h2>
-  <div class="card">
-    <label for="theme">Choose accent colour:</label>
-    <select id="theme">
-      <option value="#a855f7">Purple</option>
-      <option value="#3b82f6">Blue</option>
-      <option value="#ec4899">Pink</option>
-      <option value="#06b6d4">Cyan</option>
-    </select>
-  </div>
-</section>
+        <nav class="nav" id="site-nav" aria-label="Primary">
+          <a href="#community" class="nav__link">Community</a>
+          <a href="#roadmap" class="nav__link">Roadmap</a>
+          <a href="#faq" class="nav__link">FAQ</a>
+          <div class="nav__mobile-extra">
+            <p class="label">Accent</p>
+            <div class="swatches" data-swatches data-variant="mobile"></div>
+          </div>
+        </nav>
 
-<footer>
-  © 2026 NYXG7. All rights reserved.
-</footer>
+        <div class="site-header__actions">
+          <div class="swatches swatches--header" data-swatches data-variant="header" role="group" aria-label="Accent colour"></div>
+          <a class="btn btn--solid btn--compact" href="#community">Follow along</a>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            data-menu-toggle
+          >
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
 
-<script src="script.js"></script>
-</body>
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero__grid-lines" aria-hidden="true"></div>
+        <div class="hero__noise" aria-hidden="true"></div>
+
+        <div class="container hero__inner">
+          <div class="hero__top">
+            <p class="kicker">
+              <span class="kicker__dot" aria-hidden="true"></span>
+              Community &amp; project hub
+            </p>
+            <p class="hero__status">
+              <span class="status-dot" aria-hidden="true"></span>
+              Phase 01 — Foundation, in progress
+            </p>
+          </div>
+
+          <h1 class="hero__title">
+            <span class="hero__word">NYXG7</span>
+          </h1>
+
+          <div class="hero__bottom">
+            <p class="hero__tagline">Your community. Your future. Your space.</p>
+            <div class="hero__aside">
+              <p class="hero__lede">
+                One place for the people, the projects and the roadmap ahead. Built in the open,
+                from the ground up.
+              </p>
+              <div class="hero__ctas">
+              <a class="btn btn--solid" href="#community">Follow the build</a>
+              <a class="btn btn--ghost" href="#roadmap">
+                See the roadmap
+                <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M2 8h11M9 4l4 4-4 4" stroke-linecap="square" />
+                </svg>
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker__track">
+          <span>Foundation</span><span class="ticker__sep">/</span><span>Launch</span
+          ><span class="ticker__sep">/</span><span>Growth</span><span class="ticker__sep">/</span
+          ><span>Foundation</span><span class="ticker__sep">/</span><span>Launch</span
+          ><span class="ticker__sep">/</span><span>Growth</span><span class="ticker__sep">/</span>
+          <span>Foundation</span><span class="ticker__sep">/</span><span>Launch</span
+          ><span class="ticker__sep">/</span><span>Growth</span><span class="ticker__sep">/</span>
+        </div>
+      </div>
+
+      <section class="section section--community" id="community">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow"><span class="eyebrow__index">01</span> Channels</p>
+            <h2 class="section-title">Find us where you already are</h2>
+            <p class="section-intro">
+              One community, wherever you already spend time. Pick the channel that fits how you
+              like to keep up.
+            </p>
+          </div>
+
+          <ul class="channel-list" role="list" data-channel-list>
+            <!-- Rows are rendered from the CHANNELS config in app.js -->
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section--roadmap" id="roadmap">
+        <div class="container">
+          <div class="section-head section-head--split">
+            <div>
+              <p class="eyebrow"><span class="eyebrow__index">02</span> Roadmap</p>
+              <h2 class="section-title">Three phases,<br />one direction</h2>
+            </div>
+            <p class="section-intro section-intro--side">
+              We ship in order. Each phase builds on the last, and nothing moves forward until the
+              foundations are solid.
+            </p>
+          </div>
+
+          <ol class="phases" role="list">
+            <li class="phase phase--active">
+              <div class="phase__meta">
+                <span class="phase__num">01</span>
+                <span class="phase__state">
+                  <span class="status-dot" aria-hidden="true"></span> In progress
+                </span>
+              </div>
+              <div class="phase__body">
+                <h3 class="phase__title">Foundation</h3>
+                <p class="phase__copy">
+                  Build the NYXG7 community and the website you're reading now — the channels, the
+                  identity, and the first people through the door.
+                </p>
+                <ul class="phase__list" role="list">
+                  <li>Community spaces open</li>
+                  <li>This site live</li>
+                  <li>Core team in place</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="phase">
+              <div class="phase__meta">
+                <span class="phase__num">02</span>
+                <span class="phase__state">Next</span>
+              </div>
+              <div class="phase__body">
+                <h3 class="phase__title">Launch</h3>
+                <p class="phase__copy">
+                  Launch projects and introduce new features. This is where the work becomes
+                  public and the community gets something to gather around.
+                </p>
+                <ul class="phase__list" role="list">
+                  <li>First projects released</li>
+                  <li>New site features</li>
+                  <li>Public launch moment</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="phase">
+              <div class="phase__meta">
+                <span class="phase__num">03</span>
+                <span class="phase__state">Later</span>
+              </div>
+              <div class="phase__body">
+                <h3 class="phase__title">Growth</h3>
+                <p class="phase__copy">
+                  Expand the community and improve the experience — more people, more projects,
+                  and a better place to spend time.
+                </p>
+                <ul class="phase__list" role="list">
+                  <li>Community expansion</li>
+                  <li>Experience upgrades</li>
+                  <li>More ways to contribute</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section--faq" id="faq">
+        <div class="container faq">
+          <div class="faq__side">
+            <p class="eyebrow"><span class="eyebrow__index">03</span> FAQ</p>
+            <h2 class="section-title">Questions,<br />answered</h2>
+            <p class="faq__aside">
+              Still curious? The community channels are the fastest way to reach us.
+            </p>
+          </div>
+
+          <div class="faq__list">
+            <details class="qa" open>
+              <summary>
+                <span class="qa__q">What is NYXG7?</span>
+                <span class="qa__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="qa__a">
+                <p>
+                  NYXG7 is a community and project hub. It's the home base for our people and the
+                  projects we build together.
+                </p>
+              </div>
+            </details>
+
+            <details class="qa">
+              <summary>
+                <span class="qa__q">How do I get involved?</span>
+                <span class="qa__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="qa__a">
+                <p>
+                  The channels listed in <a href="#community">Channels</a> open at launch — that's
+                  where the conversation starts. Until then, the roadmap is the schedule.
+                </p>
+              </div>
+            </details>
+
+            <details class="qa">
+              <summary>
+                <span class="qa__q">What's being built right now?</span>
+                <span class="qa__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="qa__a">
+                <p>
+                  Phase 1 — Foundation: the community itself and this website. Projects and new
+                  features arrive in Phase 2.
+                </p>
+              </div>
+            </details>
+
+            <details class="qa">
+              <summary>
+                <span class="qa__q">How do the phases work?</span>
+                <span class="qa__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="qa__a">
+                <p>
+                  Foundation, then Launch, then Growth. Each phase is completed in order, so the
+                  <a href="#roadmap">roadmap</a> is also the release schedule.
+                </p>
+              </div>
+            </details>
+
+            <details class="qa">
+              <summary>
+                <span class="qa__q">Can I contribute?</span>
+                <span class="qa__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="qa__a">
+                <p>
+                  Yes — ideas, feedback and help are all welcome. Start a conversation in the
+                  Discord server and tell us what you'd like to work on.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--end">
+        <div class="container end">
+          <div class="end__copy">
+            <p class="eyebrow">Next</p>
+            <h2 class="end__title">Be there from<br />the beginning.</h2>
+            <p class="end__text">
+              Phase 1 is the best time to join us. The channels open at launch and the plan is
+              public, so you can see exactly what's coming.
+            </p>
+            <a class="btn btn--solid btn--lg" href="#roadmap">See the roadmap</a>
+          </div>
+          <div class="end__mark" aria-hidden="true">
+            <span>N</span><span>Y</span><span>X</span><span>G</span><span>7</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__top">
+          <a class="site-footer__brand" href="#top">NYXG7</a>
+          <nav class="site-footer__nav" aria-label="Footer">
+            <a href="#community">Community</a>
+            <a href="#roadmap">Roadmap</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+          <div class="site-footer__accent">
+            <p class="label">Accent</p>
+            <div class="swatches" data-swatches data-variant="footer" role="group" aria-label="Accent colour"></div>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <p>© 2026 NYXG7. All rights reserved.</p>
+          <a class="back-top" href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
 </html>
